@@ -8,3 +8,5 @@
 ## Caio José - Mat: 01617794
 ## Jéssica Fernanda - Mat: 24002131
 ## Renato Oliveira - Mat: 10005653
+
+Obs: O programa deverá ser executado pelo terminal do PyCharm, digitando a função "start principal.py".
