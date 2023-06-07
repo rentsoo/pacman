@@ -26,7 +26,7 @@ if __name__ == '__main__':
 
         if pos_pacman[0] < pos_comida[0]:
             pos_pacman[0] += 1
-        if pos_pacman[0] > pos_comida[0]:
+        elif pos_pacman[0] > pos_comida[0]:
             pos_pacman[0] -= 1
         elif pos_pacman[1] < pos_comida[1]:
             pos_pacman[1] += 1
