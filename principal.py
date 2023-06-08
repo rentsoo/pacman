@@ -18,7 +18,7 @@ if __name__ == '__main__':
                         print(constantes.PACMAN[0], end='')
                     else:
                         print(constantes.PACMAN[1], end='')
-                if i == pos_comida[0] and j == pos_comida[1]:
+                elif i == pos_comida[0] and j == pos_comida[1]:
                     print(constantes.COMIDA, end='')
                 else:
                     print('.', end='')
