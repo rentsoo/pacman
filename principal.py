@@ -1,8 +1,10 @@
+from random import randint
+from time import sleep
+from os import system
+import constantes
+
 if __name__ == '__main__':
-    from random import randint
-    from time import sleep
-    from os import system
-    import constantes
+      
     tipo_pacman = True
 
     pos_pacman = [randint(0, constantes.TAM_TELA - 1), randint(0, constantes.TAM_TELA - 1)]
@@ -11,14 +13,14 @@ if __name__ == '__main__':
     while True:
         system('cls')
 
-        for i in range(constantes.TAM_TELA):
-            for j in range(constantes.TAM_TELA):
-                if i == pos_pacman[0] and j == pos_pacman[1]:
+        for linha in range(constantes.TAM_TELA):
+            for coluna in range(constantes.TAM_TELA):
+                if linha == pos_pacman[0] and coluna == pos_pacman[1]:
                     if tipo_pacman:
                         print(constantes.PACMAN[0], end='')
                     else:
                         print(constantes.PACMAN[1], end='')
-                elif i == pos_comida[0] and j == pos_comida[1]:
+                elif linha == pos_comida[0] and coluna == pos_comida[1]:
                     print(constantes.COMIDA, end='')
                 else:
                     print('.', end='')
